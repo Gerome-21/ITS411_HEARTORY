@@ -1,13 +1,6 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
-import { styles } from "../styles/index";
+import { Redirect } from 'expo-router'
+import React from 'react'
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hello</Text>
-
-      <Link href={"/profile"}>Go to Profile Page</Link>
-    </View>
-  );
+  return <Redirect href={"/(auth)/login"}/>
 }
